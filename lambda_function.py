@@ -2,13 +2,13 @@ import json
 
 import sys
 import os
+sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from modules.getStockData import getStockData
 
 # Lambdaのハンドラ関数
 def lambda_handler(event, context):
     # src配下をパスに追加
-    sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
     
     # eventからsymbolを取得(デフォルトでAPPLE)
     # contextは、Lambda関数の実行環境に関する情報
