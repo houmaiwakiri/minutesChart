@@ -1,5 +1,5 @@
 services:
-  stock-price-updown-ai:
+  getPackage:
     build:
       context: .
       dockerfile: ./Docker/getPackage/Dockerfile
