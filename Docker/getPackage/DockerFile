@@ -4,6 +4,7 @@ WORKDIR /temp/python
 
 RUN pip install --upgrade pip
 RUN pip install yfinance -t /temp/python
+RUN zip -r9 layer-yfinance.zip ./python
 
 WORKDIR /temp/python
 
