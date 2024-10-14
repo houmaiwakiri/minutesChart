@@ -1,0 +1,10 @@
+FROM python:3.12-slim
+
+WORKDIR /temp/python
+
+RUN pip install --upgrade pip
+RUN pip install yfinance -t /temp/python
+
+WORKDIR /temp/python
+
+ENV PYTHONUNBUFFERED=1
