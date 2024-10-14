@@ -2,7 +2,7 @@ services:
   getPackage:
     build:
       context: .
-      dockerfile: ./Docker/getPackage/Dockerfile
+      dockerfile: ./Docker/getPackage/DockerFile
     image: python:3.12-slim
     container_name: getPackage
     working_dir: /temp
