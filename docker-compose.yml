@@ -1,0 +1,12 @@
+services:
+  stock-price-updown-ai:
+    build:
+      context: .
+      dockerfile: ./Docker/getPackage/Dockerfile
+    image: python:3.12-slim
+    container_name: getPackage
+    working_dir: /temp
+    volumes:
+      - ../src:/temp/python
+    environment:
+      PYTHONUNBUFFERED: 1
